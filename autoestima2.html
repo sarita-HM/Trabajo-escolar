@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Falta de Autoestima en ADOLESCENTES</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+
+    <div class="redbanner">
+        <p><strong>Confía en tus habilidades y podras lograr tus objetivos</strong></p>
+    </div>
+
+
+
+<div class="container">
+  <div class="card card1"><h5><strong>La ira en la adolescencia, se usa para protegerse de emociones más profundas y dolorosas que no saben cómo manejar.</strong></h5></div>
+  <div class="card card2"><h5><strong>La tristeza crea autocrítica, comparaciones, problemas sociales y académicos, donde el adolescente se siente insuficiente y no se valora a sí mismo.</strong></h5></div>
+  <div class="card card3"><h5><strong>El equilibrio es necesario para manejar los intensos cambios físicos y sociales de la adolescencia, para manejar mejor las emociones, superar desafíos y tomar decisiones autónomas.</strong></h5></div>
+  <div class="card card4"><h5><strong>Los adolescentes que se valoran positivamente tienen más felicidad y confianza, lo que les permite enfrentar desafíos, tomar decisiones informadas y desarrollar relaciones sociales.</strong></h5></div>
+  <div class="card card5"><h5><strong>Un adolescente con alta autoestima se siente más seguro para "pensar fuera de la caja" y probar ideas nuevas sin miedo al fracaso, lo que fomenta la originalidad.</strong></h5></div>
+  <div class="card card6"><h5><strong>Un adolescente que se ama a sí mismo sabe que merece cuidado y respeto, lo que modela cómo interactuará en otras relaciones. Es un factor protector contra relaciones tóxicas.</strong></h5></div>
+</div>
+
+
+
+
+    
+<div class="leftbox" style="width: 100%; display:flex; justify-content:center;">
+    <img src="niño.jpg" class="rounded-circle" alt="Foto de niño"
+         style="max-width: 80%; border-radius: 50%; box-shadow: 0 0 20px rgba(255,64,129,0.6);">
+</div>
+
+
+<style>
+  .neon-comment {
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(255,64,129,0.6);
+    padding: 15px;
+    background-color: #111;
+    color: #fff;
+    border: none;
+    width: 100%;
+    min-height: 150px;
+    font-size: 1.1rem;
+  }
+  .neon-comment::placeholder {
+    color: rgba(255,64,129,0.7);
+  }
+  .neon-button {
+    background-color: #ff4081;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: 0 0 15px rgba(255,64,129,0.6);
+    font-size: 1rem;
+  }
+  .neon-button:hover {
+    box-shadow: 0 0 25px rgba(255,64,129,0.9);
+  }
+  .comments-display {
+    margin-top: 20px;
+    color: #fff;
+    font-size: 1rem;
+  }
+  .comment-item {
+    border-bottom: 1px solid rgba(255,64,129,0.4);
+    padding: 10px 0;
+  }
+</style>
+
+<div>
+  <label for="comment">¡Hola! aqui puedes dejar tu comentario. ¡Gracias!</label>
+  <textarea class="form-control neon-comment" id="comment" name="text" placeholder="Escribe lo que quieras..."></textarea>
+  <button class="neon-button" onclick="addComment()">Enviar</button>
+</div>
+
+<div class="comments-display" id="commentsDisplay">
+
+</div>
+
+<script>
+function addComment() {
+  const commentBox = document.getElementById('comment');
+  const commentText = commentBox.value.trim();
+  if(commentText === "") return; // no enviar vacíos
+
+  const commentDiv = document.createElement('div');
+  commentDiv.classList.add('comment-item');
+  commentDiv.textContent = commentText;
+
+  document.getElementById('commentsDisplay').appendChild(commentDiv);
+  commentBox.value = ''; // limpiar textarea
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Botón de regreso -->
+            <div style="width: 100%; display:flex; justify-content:center;">
+                <a href="index.html" class="btn-buy">REGRESAR AL INICIO</a>
+            </div>
+
+</body>
+</html>
